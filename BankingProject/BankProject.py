@@ -10,3 +10,13 @@ print(
     "5. Open a credit card\n"
 )
 
+def openAccount():
+    # get user information
+
+selected = int(input("Which one would you like?"))
+
+match selected:
+    case 1:
+        openAccount()
+
+
