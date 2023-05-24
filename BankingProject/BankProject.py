@@ -6,5 +6,7 @@ print(
     "1. Open an account\n",
     "2. Destroy your computer\n",
     "3. Steal from bank\n",
-    "4. Get captured by the FBI\n"
+    "4. Get captured by the FBI\n",
+    "5. Open a credit card\n"
 )
+
