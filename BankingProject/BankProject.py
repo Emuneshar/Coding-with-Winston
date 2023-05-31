@@ -14,12 +14,16 @@ print(
 )
 
 def openAccount():
+    User = dict(username = "", password = "", accountNumber = 0)
     username = input(str("What would you like to be your username"))
     password = input(str("Please create your password"))
     accountNumber = random.randint(99999999, 999999999999)
-    user = ("username: " + username)
-    passWord = ("password: "+ password)
-    os.system('cls')
+    userName = (username)
+    passWord = (password)
+    User[username] = userName
+    User[password] = passWord
+    User[accountNumber] = accountNumber
+    print(User[username])
     
 
 selected = int(input("Which one would you like?"))
