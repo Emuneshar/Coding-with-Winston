@@ -27,8 +27,10 @@ def openAccount():
 
 selected = int(input("Which one would you like?"))
 
+listOfAccounts = []
+
 match selected:
     case 1:
-        openAccount()
+        listOfAccounts.append(openAccount())
 
 
