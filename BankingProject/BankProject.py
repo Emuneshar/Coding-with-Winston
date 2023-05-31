@@ -7,23 +7,22 @@ print(
     "Your options are as follows:\n"
     
     "1. Open an account\n",
-    "2. Destroy your computer\n",
-    "3. Steal from bank\n",
-    "4. Get captured by the FBI\n",
+    "2. Deposit Money\n",
+    "3. Withdraw Money\n",
+    "4. View Balance\n",
     "5. Open a credit card\n"
 )
 
 def openAccount():
     User = dict(username = "", password = "", accountNumber = 0)
-    username = input(str("What would you like to be your username"))
-    password = input(str("Please create your password"))
+    username = input(str("What would you like to be your username\n"))
+    password = input(str("Please create your password\n"))
     accountNumber = random.randint(99999999, 999999999999)
     userName = (username)
     passWord = (password)
     User[username] = userName
     User[password] = passWord
     User[accountNumber] = accountNumber
-    print(User[username])
     
 
 selected = int(input("Which one would you like?"))
