@@ -1,3 +1,5 @@
+import random
+
 print("Welcome to the Bank of Coach Eshwar")
 print("If you don't have an account you can open one now by selecting 1 from the menu below")
 print(
@@ -11,7 +13,11 @@ print(
 )
 
 def openAccount():
-    # get user information
+    username = input(str("What would you like to be your username"))
+    password = input(str("Please create your password"))
+    user = ("username: " + username)
+    passWord = ("password: "+ password)
+    
 
 selected = int(input("Which one would you like?"))
 
