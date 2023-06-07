@@ -23,6 +23,7 @@ def openAccount():
     User[username] = userName
     User[password] = passWord
     User[accountNumber] = accountNumber
+    return User
     
 
 selected = int(input("Which one would you like?"))
@@ -32,6 +33,10 @@ listOfAccounts = []
 match selected:
     case 1:
         listOfAccounts.append(openAccount())
+        print(listOfAccounts[0])
+    case 2:
+        username = input("what is your username?")
+
 
 
 
