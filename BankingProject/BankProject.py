@@ -35,7 +35,11 @@ match selected:
         listOfAccounts.append(openAccount())
         print(listOfAccounts[0])
     case 2:
-        username = input("what is your username?")
+        username = str(input("what is your username?"))
+        if username in listOfAccounts:
+            print("Account found!")
+            deposit = float(input("How much would you like to deposit?"))
+            
 
 
 
