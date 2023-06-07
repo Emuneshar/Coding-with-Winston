@@ -26,9 +26,11 @@ def openAccount():
     return User
     
 
+listOfAccounts = []
+
 selected = int(input("Which one would you like?"))
 
-listOfAccounts = []
+
 
 match selected:
     case 1:
