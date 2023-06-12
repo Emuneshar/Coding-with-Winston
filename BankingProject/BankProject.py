@@ -14,35 +14,41 @@ print(
 )
 
 def openAccount():
-    User = dict(username = "", password = "", accountNumber = 0)
-    username = input(str("What would you like to be your username\n"))
-    password = input(str("Please create your password\n"))
+    User = dict(username = "", password = "", accountNumber = 0, balance = 0 )
+    userN = input(str("What would you like to be your username\n"))
+    passW = input(str("Please create your password\n"))
+    startingBalance = float(input("how much would you like to deposit?"))
     accountNumber = random.randint(99999999, 999999999999)
-    userName = (username)
-    passWord = (password)
-    User[username] = userName
-    User[password] = passWord
-    User[accountNumber] = accountNumber
+    # userName = (username)
+    # passWord = (password)
+    User["username"] = userN
+    User["password"] = passW
+    User["accountNumber"] = accountNumber
+    User["balance"] = startingBalance
     return User
     
 
 listOfAccounts = []
 
-selected = int(input("Which one would you like?"))
+
+while True:
+
+    selected = int(input("Which one would you like?"))
 
 
 
-match selected:
-    case 1:
-        listOfAccounts.append(openAccount())
-        print(listOfAccounts[0])
-    case 2:
-        username = str(input("what is your username?"))
-        if username in listOfAccounts:
-            print("Account found!")
-            deposit = float(input("How much would you like to deposit?"))
-        else:
-            print("Account not found")
+    match selected:
+        case 1:
+            listOfAccounts.append(openAccount())
+            print(listOfAccounts)
+            continue
+        case 2:
+            username = str(input("what is your username?"))
+            if username in listOfAccounts:
+                print("Account found!")
+                deposit = float(input("How much would you like to deposit?"))
+            else:
+                print("Account not found")
 
 
 
