@@ -49,8 +49,9 @@ while True:
                 deposit = float(input("How much would you like to deposit?"))
             else:
                 print("Account not found")
-
-
+        case 3:
+            name = input("What is your username?")
+            
 
 
 
